@@ -23,7 +23,7 @@ module.exports = defineConfig({
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
     projectId: "5c9vi9",
-    baseUrl: "https://github.com/AliciaHerreroQA/e2e-cypress-examen-istqb",
+    baseUrl: "https://github.com/AliciaHerreroQA/Examen-istqb",
     chromeWebSecurity: true
   },
 });

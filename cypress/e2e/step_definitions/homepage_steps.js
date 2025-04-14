@@ -5,17 +5,21 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor";
   
 
+  
   Given("el usuario abre la página para registrarse", () => {
    
 
     //Visitar la página de la plataforma
     cy.visit("/");
+ 
+  });
 
-    //Recargar la página de la plataforma
-    cy.reload();
+  Given("el usuario pulsa el botón registro", () => {
+   
 
-    //Borrar las cookies. Este paso no es necesario porque CYPRESS, por defecto, las borra.
-    cy.clearCookies();
+    
+    cy.get('[data-testid="boton_registro"]').click()
+ 
   });
 
  
