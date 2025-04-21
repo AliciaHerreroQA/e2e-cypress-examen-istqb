@@ -28,7 +28,7 @@ import {
      // siempre se muestra el examen aunq no deberia.  aun asi no tienes puesto el data-testid lo caul no lo puedes rastrear
      //quedaria asi
     //cy.get('[data-testid="examenFormulario"]').should('not.be.visible');
-    cy.get('[data-testid="respuesta_1a"]').should('be.visible'); //esta solo esta para q pase el test cuando habilites la linea anterior borra esta
+    cy.get('[data-testid="examenFormulario"]').should('not.be.visible'); //esta solo esta para q pase el test cuando habilites la linea anterior borra esta
     //    //el formulario permanece visible
   })
 
