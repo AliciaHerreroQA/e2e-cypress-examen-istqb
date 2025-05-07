@@ -13,18 +13,17 @@ import {
   });
 
   When("el usuario pulsa el boton registro", () => {
-    cy.get('[data-testid="boton_registro"]').click();
-
+    cy.get('[data-testid="boton_registro"]').click()
   });
 
   Then("el usuario debe ver el mensaje de error", () => {
- 
-    cy.get('[data-testid="mensaje"]').should('be.visible');     //se muestra un mensaje de error
+    //cy.get('[data-testid="mensaje"]').should('be.visible');   //se muestra un mensaje de error
+    cy.get('[data-testid="mensaje-error"]').should('be.visible');
   });
   Then("la seccion del examen no aparece", () =>{
+   
+    cy.get('[data-testid="examenFormulario"]').should('not.be.visible');
 
-    cy.get('[data-testid="examenFormulario"]').should('not.be.visible'); 
-    //    //el formulario permanece visible
   })
 
   Then ("el formulario de registro permanece visible", () =>{
