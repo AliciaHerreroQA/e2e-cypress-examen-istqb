@@ -5,7 +5,7 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor";
   
 
-          //ESCENARIO 1
+  //ESCENARIO 1
 
   Given("el usuario abre la pagina para registrarse", () => {             
     //Visitar la página de la plataforma
@@ -18,7 +18,7 @@ import {
 
   Then("el usuario debe ver el mensaje de error", () => {
     //cy.get('[data-testid="mensaje"]').should('be.visible');   //se muestra un mensaje de error
-    cy.get('[data-testid="mensaje-error"]').should('be.visible');
+    cy.get('[data-testid="mensaje"]').should('be.visible');
   });
   Then("la seccion del examen no aparece", () =>{
    
@@ -27,12 +27,12 @@ import {
   })
 
   Then ("el formulario de registro permanece visible", () =>{
-    cy.get('[data-testid="formsingup"]').should('be.visible');
+    cy.get('[data-testid="singup"]').should('be.visible');
   })
 
 
  
-          //ESCENARIO 2
+  //ESCENARIO 2
 
   When("introduce un nombre valido en el campo correspondiente" , () => {
     cy.get('[data-testid="input_nombre"]').type('Alicia');  //introduce un nombre válido
@@ -57,3 +57,5 @@ import {
 
 
   
+
+

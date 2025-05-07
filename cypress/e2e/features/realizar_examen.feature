@@ -9,12 +9,12 @@ Scenario: Examen aprobado
     When el usuario responde la pregunta numero "2" con la opcion "b"
     When el usuario responde la pregunta numero "3" con la opcion "b"
     When el usuario responde la pregunta numero "4" con la opcion "a"
-    When el usuario responde la pregunta numero "5" con la opcion "C"
+    When el usuario responde la pregunta numero "5" con la opcion "c"
     When el usuario responde la pregunta numero "6" con la opcion "a"
     When el usuario responde la pregunta numero "7" con la opcion "c"
     When el usuario responde la pregunta numero "8" con la opcion "c"   
     When el usuario responde la pregunta numero "9" con la opcion "c"
-    When el usuario responde la pregunta numero "10" con la opcion ""
+
     When corrige el examen
     And valida que se muestran las preguntas corregidas
     Then valida que la puntuacion es correcta
