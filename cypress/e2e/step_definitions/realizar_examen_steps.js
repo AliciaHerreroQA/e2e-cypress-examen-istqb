@@ -13,8 +13,19 @@ import {
   });
 
   When("corrige el examen" , () => {
-    cy.get('[data-testid = "correccion"]').click();
+    cy.get('[data-testid = "boton_finalizar"]').click();
 
   });
-  
+
+
+  Then ("la pregunta numero {string} debe tener la puntuacion {string}" , (numeroPregunta, puntuacion) => {
+cy.get('[data-testid = "resultado' + numeroPregunta + '"]').should('contain', puntuacion);
+
+  });
+
+  Then ("el resultado final debe tener la puntuacion {string}" , (puntuacion) => {
+cy.get('[data-testid = "resultado"]').should('contain', puntuacion);
+
+  });
+
 
